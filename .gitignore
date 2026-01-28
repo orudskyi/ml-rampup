@@ -1,0 +1,29 @@
+# --- Python Basics ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments (Crucial: never commit these) ---
+.venv/
+env/
+venv/
+ENV/
+
+# --- Tools & IDEs ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- Project Data (Strict Rule: Data stays local) ---
+data/
+*.csv
+*.json
+*.parquet
+*.pkl
+*.joblib
+
+# --- Jupiter Notebooks ---
+.ipynb_checkpoints/
+
+# --- Local configs (Secrets) ---
+.env

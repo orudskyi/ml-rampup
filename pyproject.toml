@@ -1,0 +1,33 @@
+[project]
+name = "ml-rampup"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.4.1",
+    "pandas>=3.0.0",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+# E - pycodestyle errors
+# F - Pyflakes
+# I - isort
+# N - naming conventions
+select = ["E", "F", "I", "N"]
+
+[tool.mypy]
+# Strict mode on.
+strict = true
+ignore_missing_imports = true
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.1.0",
+    "mypy>=1.19.1",
+    "ruff>=0.14.14",
+]
